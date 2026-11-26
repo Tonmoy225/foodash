@@ -122,8 +122,8 @@ CREATE TABLE `sessions` (
 -- ============================================================
 
 INSERT INTO `users` (`name`, `email`, `password`, `role`, `created_at`, `updated_at`) VALUES
-('Admin User', 'admin@foodash.com', '$2y$12$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', NOW(), NOW()),
-('Demo Client', 'client@foodash.com', '$2y$12$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'client', NOW(), NOW());
+('Admin User', 'admin@foodash.com', '$2y$12$ZKUsXAiL0d8DJJyHIE9Ivuv8aZvm6O0UUhB119YhT/wFWf86Hc4hG', 'admin', NOW(), NOW()),
+('Demo Client', 'client@foodash.com', '$2y$12$ZKUsXAiL0d8DJJyHIE9Ivuv8aZvm6O0UUhB119YhT/wFWf86Hc4hG', 'client', NOW(), NOW());
 -- Default password is: password
 
 INSERT INTO `categories` (`name`, `icon`, `created_at`, `updated_at`) VALUES

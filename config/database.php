@@ -10,6 +10,11 @@ return [
             'database'  => env('DB_DATABASE', 'foodash'),
             'username'  => env('DB_USERNAME', 'root'),
             'password'  => env('DB_PASSWORD', ''),
+            // TiDB requires TLS. Pass the CA from the environment only when it
+            // is configured, so local XAMPP (no MYSQL_ATTR_SSL_CA) is unaffected.
+            'options'   => env('MYSQL_ATTR_SSL_CA')
+                ? [PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA')]
+                : [],
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',
