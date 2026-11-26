@@ -15,6 +15,16 @@ class RoleMiddleware
         }
 
         if (Auth::user()->role !== $role) {
+            // Send each role to its own area instead of trapping the user in a
+            // 403 loop (the error page's "Go Home" link points to `/`).
+            if (Auth::user()->role === 'admin') {
+                return redirect()->route('admin.dashboard');
+            }
+
+            if (Auth::user()->role === 'client') {
+                return redirect()->route('home');
+            }
+
             abort(403, 'Unauthorized.');
         }
 
