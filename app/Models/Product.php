@@ -11,6 +11,6 @@ class Product extends Model {
     public function getImageUrlAttribute() {
         return $this->image
             ? asset('images/products/' . $this->image)
-            : asset('images/placeholder.jpg');
+            : asset('images/placeholder.svg');
     }
 }
