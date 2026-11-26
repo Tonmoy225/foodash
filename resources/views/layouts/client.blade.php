@@ -7,7 +7,7 @@
     <meta name="base-url" content="{{ url('') }}">
     <title>@yield('title', 'FooDash') — Fast & Fresh Delivery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/client.css') }}">
     @stack('styles')
 </head>

@@ -23,7 +23,7 @@
             <div class="cart-items">
                 @foreach($cart as $item)
                 <div class="cart-item" id="cart-item-{{ $item['id'] }}">
-                    <img src="{{ $item['image'] }}" alt="{{ $item['name'] }}" onerror="this.src='https://via.placeholder.com/80x80/ff6b35/fff?text=🍽️'">
+                    <img src="{{ $item['image'] }}" alt="{{ $item['name'] }}" onerror="this.src='https://via.placeholder.com/80x80/e4002b/fff?text=🍽️'">
                     <div class="cart-item-info">
                         <h4>{{ $item['name'] }}</h4>
                         <span class="item-unit-price">৳{{ number_format($item['price'], 0) }} each</span>

@@ -34,7 +34,7 @@
             @foreach($products as $product)
             <div class="product-card">
                 <div class="product-image">
-                    <img src="{{ $product->image_url }}" alt="{{ $product->name }}" onerror="this.src='https://via.placeholder.com/300x200/ff6b35/ffffff?text={{ urlencode($product->name) }}'">
+                    <img src="{{ $product->image_url }}" alt="{{ $product->name }}" onerror="this.src='https://via.placeholder.com/300x200/e4002b/ffffff?text={{ urlencode($product->name) }}'">
                     @if(!$product->is_available)<div class="product-unavailable">Unavailable</div>@endif
                 </div>
                 <div class="product-info">

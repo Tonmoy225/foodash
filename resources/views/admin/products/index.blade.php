@@ -20,7 +20,7 @@
                     <td>
                         <img src="{{ $product->image_url }}" width="50" height="50"
                              style="border-radius:8px; object-fit:cover"
-                             onerror="this.src='https://via.placeholder.com/50x50/ff6b35/fff?text=F'">
+                             onerror="this.src='https://via.placeholder.com/50x50/e4002b/fff?text=F'">
                     </td>
                     <td><strong>{{ $product->name }}</strong></td>
                     <td>{{ $product->category->name }}</td>

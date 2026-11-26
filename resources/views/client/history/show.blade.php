@@ -21,7 +21,7 @@
             <div style="display:flex;align-items:center;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--border)">
                 <img src="{{ $item->product->image_url }}" width="50" height="50"
                      style="border-radius:10px;object-fit:cover"
-                     onerror="this.src='https://via.placeholder.com/50x50/ff6b35/fff?text=F'">
+                     onerror="this.src='https://via.placeholder.com/50x50/e4002b/fff?text=F'">
                 <div style="flex:1">
                     <div style="font-weight:600">{{ $item->product->name }}</div>
                     <div style="font-size:.8rem;color:var(--text-muted)">৳{{ number_format($item->unit_price,0) }} × {{ $item->quantity }}</div>

@@ -6,7 +6,7 @@
 #map { height: 400px; border-radius: 16px; }
 .tracking-status { display:flex; gap:1rem; margin:2rem 0; flex-wrap:wrap }
 .status-step { flex:1; min-width:120px; text-align:center; padding:1rem; background:var(--card-bg); border-radius:12px; border:2px solid transparent }
-.status-step.done { border-color: var(--accent); background: rgba(255,107,53,0.1) }
+.status-step.done { border-color: var(--accent); background: rgba(228,0,43,0.1) }
 .status-step.current { border-color: var(--primary); animation: pulse 2s infinite }
 .step-icon-s { font-size:1.8rem; display:block; margin-bottom:.5rem }
 @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }

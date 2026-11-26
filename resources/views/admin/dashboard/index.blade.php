@@ -6,7 +6,7 @@
 <!-- STATS -->
 <div class="stat-cards">
     <div class="stat-card">
-        <div class="stat-icon" style="background:#ff6b35">📦</div>
+        <div class="stat-icon" style="background:#e4002b">📦</div>
         <div class="stat-info">
             <span class="stat-value">{{ number_format($stats['orders']) }}</span>
             <span class="stat-label">Total Orders</span>

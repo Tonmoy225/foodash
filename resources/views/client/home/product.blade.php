@@ -15,7 +15,7 @@
             <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:#111">
                 <img src="{{ $product->image_url }}" alt="{{ $product->name }}"
                      style="width:100%;height:100%;object-fit:cover"
-                     onerror="this.src='https://via.placeholder.com/600x450/ff6b35/ffffff?text={{ urlencode($product->name) }}'">
+                     onerror="this.src='https://via.placeholder.com/600x450/e4002b/ffffff?text={{ urlencode($product->name) }}'">
             </div>
 
             <!-- INFO -->
@@ -44,7 +44,7 @@
                     Add to Cart →
                 </button>
                 @else
-                <div style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:#f87171;padding:.75rem 1.2rem;border-radius:12px;display:inline-block">
+                <div style="background:rgba(228,0,43,.08);border:1px solid rgba(228,0,43,.25);color:#b30024;padding:.75rem 1.2rem;border-radius:12px;display:inline-block">
                     Currently Unavailable
                 </div>
                 @endif
@@ -60,7 +60,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="{{ $item->image_url }}" alt="{{ $item->name }}"
-                             onerror="this.src='https://via.placeholder.com/300x200/ff6b35/fff?text={{ urlencode($item->name) }}'">
+                             onerror="this.src='https://via.placeholder.com/300x200/e4002b/fff?text={{ urlencode($item->name) }}'">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">{{ $item->name }}</h3>
