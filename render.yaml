@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: foodash
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: APP_NAME
+        value: FooDash
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        sync: false          # php artisan key:generate --show
+      - key: APP_URL
+        sync: false          # https://foodash.onrender.com
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: SESSION_DRIVER
+        value: file
+      - key: CACHE_DRIVER
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: DB_CONNECTION
+        sync: false          # mysql ba mongodb
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_DATABASE
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_DSN
+        sync: false          # MongoDB Atlas connection string (mongodb+srv://...)
+      - key: RUN_MIGRATIONS
+        value: "false"
